@@ -15,6 +15,7 @@ The project demonstrates an end-to-end machine learning pipeline including data 
 
  • Transparent evaluation using confusion matrix and classification report
 
+
 🧠 Tech Stack
 
  • Python
@@ -28,6 +29,7 @@ The project demonstrates an end-to-end machine learning pipeline including data 
  • Flask
 
  • HTML / CSS
+
 
 📂 Project Structure
 
@@ -158,12 +160,12 @@ Upload a fingerprint image to get the predicted blood group.
 
 🔮Future Enhancements
 
-  • Increase dataset size and balance classes
+    • Increase dataset size and balance classes
 
-  • Apply Transfer Learning (ResNet, MobileNet, EfficientNet)
+    • Apply Transfer Learning (ResNet, MobileNet, EfficientNet)
 
-  • Use class weighting or focal loss
+    • Use class weighting or focal loss
 
-  • Extract fingerprint minutiae features
+    • Extract fingerprint minutiae features
 
-  • Improve prediction accuracy for rare blood groups
+    • Improve prediction accuracy for rare blood groups
