@@ -5,23 +5,6 @@ A+, A−, B+, B−, AB+, AB−, O+, O−.
 
 The project demonstrates an end-to-end machine learning pipeline including data preprocessing, model evaluation, and web-based deployment using Flask.
 
-📁 Dataset Folder Structure
-Each folder in the dataset corresponds to a blood group label.
-
-Blood Group	Folder Name
-A Positive	A+/
-A Negative	A-/
-B Positive	B+/
-B Negative	B-/
-AB Positive	AB+/
-AB Negative	AB-/
-O Positive	O+/
-O Negative	O-/
-
-📸 Sample Dataset Screenshot
-
-
-
 
 🚀 Key Highlights
 
