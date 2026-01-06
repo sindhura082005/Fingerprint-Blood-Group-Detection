@@ -3,7 +3,7 @@
 This project implements an end-to-end deep learning system to predict human blood groups from fingerprint images using a Convolutional Neural Network (CNN). The system classifies fingerprints into 8 blood group categories:
 A+, A−, B+, B−, AB+, AB−, O+, O−.
 
-The objective of this project is to explore the feasibility of non-invasive blood group prediction using biometric patterns and deep learning, contributing to AI-driven healthcare research.
+The project demonstrates an end-to-end machine learning pipeline including data preprocessing, model evaluation, and web-based deployment using Flask.
 
 🚀 Key Highlights
 
@@ -31,22 +31,20 @@ HTML / CSS
 
 📂 Project Structure
 Fingerprint-Blood-Group-Detection/
-│
-├── dataset/                    
-│
+├── dataset/
 ├── results/
 │   ├── classification_report.txt
 │   └── confusion_matrix.png
-│
 ├── templates/
-│   ├── index.html               
-│   └── result.html              
-│
-├── app.py                       
-├── data_preprocessing.py        
-├── evaluate.py                  
-├── blood_group_cnn_model.h5     
+│   ├── index.html
+│   └── result.html
+├── app.py
+├── data_preprocessing.py
+├── evaluate.py
+├── blood_group_cnn_model.h5
 ├── requirements.txt
+└── README.md
+
 
 ⚙️ Detailed Implementation
 🔹 1. Data Preprocessing (data_preprocessing.py)
