@@ -35,31 +35,27 @@ The project demonstrates an end-to-end machine learning pipeline including data 
 
 📂 Project Structure
 
-Fingerprint-Blood-Group-Detection/
+     •Fingerprint-Blood-Group-Detection/
 
-├── dataset/                                       contains fingerprint images
+     •dataset : contains fingerprint images
 
-├── results/
+     •app.py : Flask web application
 
-│   ├── classification_report.txt                  #evaluation metrics
+     •data_preprocessing.py : image preprocessing pipeline
 
-│   └── confusion_matrix.png                       #confusion matrix visualization
+     •evaluate.py : model evaluation and metrics generation
 
-├── templates/
+     •blood_group_cnn_model.h5 : trained CNN model
 
-│   ├── index.html                                 #image upload page
+     •requirements.txt : project dependencies
 
-│   └── result.html                                #prediction result page
+     •templates/index.html : image upload page
 
-├── app.py                                         #Flask web application
+     •templates/result.html : prediction result page
 
-├── data_preprocessing.py                          #image preprocessing pipeline
+     •results/classification_report.txt : evaluation metrics
 
-├── evaluate.py                                    #model evaluation and metrics generation
-
-├── blood_group_cnn_model.h5                       #trained CNN model
-
-├── requirements.txt                               #project dependencies
+     •results/confusion_matrix.png : confusion matrix visualization
 
 
 
