@@ -8,25 +8,16 @@ The project demonstrates an end-to-end machine learning pipeline including data 
 🚀 Key Highlights
 
 CNN-based multi-class image classification
-
 Complete ML lifecycle: preprocessing → training → evaluation → deployment
-
 Flask-based web application for real-time prediction
-
 Transparent evaluation using confusion matrix and classification report
 
 🧠 Tech Stack
-
 Python
-
 TensorFlow / Keras
-
 OpenCV
-
 NumPy, Scikit-learn
-
 Flask
-
 HTML / CSS
 
 📂 Project Structure
@@ -47,6 +38,7 @@ Fingerprint-Blood-Group-Detection/
 
 
 ⚙️ Detailed Implementation
+
 🔹 1. Data Preprocessing (data_preprocessing.py)
 
 This module handles all image preprocessing tasks:
@@ -113,11 +105,12 @@ Lower accuracy for AB+ and AB− classes
 
 📈 Results
 
-Confusion Matrix → /results/confusion_matrix.png
+Confusion Matrix → results/classification_report.txt
 
 Classification Report → /results/classification_report.txt
 
 ▶️ How to Run the Project
+
 1️⃣ Install Dependencies
 pip install -r requirements.txt
 
