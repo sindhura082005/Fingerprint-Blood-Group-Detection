@@ -8,32 +8,55 @@ The project demonstrates an end-to-end machine learning pipeline including data 
 🚀 Key Highlights
 
 CNN-based multi-class image classification
+
 Complete ML lifecycle: preprocessing → training → evaluation → deployment
+
 Flask-based web application for real-time prediction
+
 Transparent evaluation using confusion matrix and classification report
 
 🧠 Tech Stack
+
 Python
+
 TensorFlow / Keras
+
 OpenCV
+
 NumPy, Scikit-learn
+
 Flask
+
 HTML / CSS
 
 📂 Project Structure
+
 Fingerprint-Blood-Group-Detection/
+
 ├── dataset/
+
 ├── results/
+
 │   ├── classification_report.txt
+
 │   └── confusion_matrix.png
+
 ├── templates/
+
 │   ├── index.html
+
 │   └── result.html
+
 ├── app.py
+
 ├── data_preprocessing.py
+
 ├── evaluate.py
+
 ├── blood_group_cnn_model.h5
+
 ├── requirements.txt
+
 └── README.md
 
 
@@ -54,6 +77,7 @@ Train–validation split
 Purpose:
 Ensures fingerprint images are standardized before feeding into the CNN model.
 
+
 🔹 2. Model Architecture
 
 The CNN model consists of:
@@ -69,6 +93,7 @@ Softmax activation for 8-class output
 Loss Function: Categorical Cross-Entropy
 Optimizer: Adam
 
+
 🔹 3. Model Evaluation (evaluate.py)
 
 This script evaluates the trained model using:
@@ -80,6 +105,7 @@ Confusion Matrix visualization
 Class-wise performance analysis
 
 The results are saved in the /results directory for transparency and reproducibility.
+
 
 🔹 4. Web Application (app.py)
 
@@ -93,8 +119,11 @@ Predicted blood group is displayed on the result page
 
 This demonstrates end-to-end deployment capability, not just model training.
 
+
 📊 Model Performance
+
 🔹 Overall Accuracy
+
 Accuracy: 45%
 
 🔹 Class-wise Observations
@@ -102,6 +131,7 @@ Accuracy: 45%
 Good performance for A+, A−, O+, O−
 
 Lower accuracy for AB+ and AB− classes
+
 
 📈 Results
 
@@ -112,15 +142,19 @@ Classification Report → /results/classification_report.txt
 ▶️ How to Run the Project
 
 1️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 2️⃣ Run the Flask Application
+
 python app.py
 
 3️⃣ Open Browser
+
 http://127.0.0.1:5000/
 
 Upload a fingerprint image to get the predicted blood group.
+
 
 🔮Future Enhancements
 
