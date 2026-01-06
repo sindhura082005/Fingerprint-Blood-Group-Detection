@@ -1,104 +1,144 @@
 # 🧬 Fingerprint-Based Blood Group Detection using CNN
 
-This project implements a Convolutional Neural Network (CNN) model using TensorFlow and OpenCV to detect human blood groups from fingerprint images. It includes image preprocessing, model training, evaluation, and saving the final model.
+This project implements an end-to-end deep learning system to predict human blood groups from fingerprint images using a Convolutional Neural Network (CNN). The system classifies fingerprints into 8 blood group categories:
+A+, A−, B+, B−, AB+, AB−, O+, O−.
 
-## 📁 Dataset Folder Structure
+The objective of this project is to explore the feasibility of non-invasive blood group prediction using biometric patterns and deep learning, contributing to AI-driven healthcare research.
 
-Each folder in the dataset corresponds to a blood group label.
+🚀 Key Highlights
 
-| Blood Group | Folder Name |
-|-------------|-------------|
-| A Positive  | `A+/`       |
-| A Negative  | `A-/`       |
-| B Positive  | `B+/`       |
-| B Negative  | `B-/`       |
-| AB Positive | `AB+/`      |
-| AB Negative | `AB-/`      |
-| O Positive  | `O+/`       |
-| O Negative  | `O-/`       |
+CNN-based multi-class image classification
 
+Complete ML lifecycle: preprocessing → training → evaluation → deployment
 
-## 📸 Sample Dataset Screenshot
+Flask-based web application for real-time prediction
 
-![Dataset Screenshot](screenshots/A+.png)
+Transparent evaluation using confusion matrix and classification report
 
-## 📌 Project Workflow
+🧠 Tech Stack
 
-### 1. **Image Preprocessing**
+Python
 
-- Read and resize each image to `128x128`.
-- Normalize pixel values to the range `[0, 1]`.
-- Assign a label to each image based on folder name.
-- Convert labels to one-hot encoded vectors.
-- Save the processed data as `.npy` files.
+TensorFlow / Keras
 
-**Screenshot:**
-![Preprocessing Screenshot](screenshots/O-.png)
-![A-](screenshots/A-.png)
-![O+ Screenshot](screenshots/O+.png)
-![B- Screenshot](screenshots/B-.png)
-![B+ Screenshot](screenshots/B+.png)
-### 2. **Model Architecture**
+OpenCV
 
-A simple CNN model with the following layers:
+NumPy, Scikit-learn
 
-- **Conv2D** → ReLU
-- **MaxPooling2D**
-- **Conv2D** → ReLU
-- **MaxPooling2D**
-- **Flatten**
-- **Dense** → ReLU
-- **Dropout**
-- **Dense (Softmax)**
+Flask
 
-**Screenshot:**
-![Model Summary Screenshot](screenshots/intital_page.png)
-![Confsusion Matrix](screenshots/Screenshot 2025-06-10 115517.png)
+HTML / CSS
 
-### 3. **Model Training**
+📂 Project Structure
+Fingerprint-Blood-Group-Detection/
+│
+├── dataset/                    
+│
+├── results/
+│   ├── classification_report.txt
+│   └── confusion_matrix.png
+│
+├── templates/
+│   ├── index.html               
+│   └── result.html              
+│
+├── app.py                       
+├── data_preprocessing.py        
+├── evaluate.py                  
+├── blood_group_cnn_model.h5     
+├── requirements.txt
 
-- Model is trained using 80% training and 20% validation data.
-- Loss function: `categorical_crossentropy`
-- Optimizer: `Adam`
-- Epochs: 10
-- Batch Size: 32
+⚙️ Detailed Implementation
+🔹 1. Data Preprocessing (data_preprocessing.py)
 
-model.fit(X_train, y_train, epochs=10, batch_size=32, validation_data=(X_val, y_val))
+This module handles all image preprocessing tasks:
 
-4. Model Evaluation
-Loads the trained .h5 model.
-Evaluates using a validation split via ImageDataGenerator.
+Image resizing and normalization
 
-5. Model Saving
-Final model is saved as: blood_group_cnn_model.h5
-Use load_model() from Keras to reload the trained model.
+Conversion to grayscale (if required)
 
-⚙️ Requirements
-Install the required libraries with: pip install tensorflow opencv-python numpy scikit-learn
+Dataset loading using ImageDataGenerator
 
-## 📁 File Structure
+Train–validation split
 
-| File/Folder             | Description                                                |
-|-------------------------|------------------------------------------------------------|
-| `dataset/`              | Contains folders for each blood group (A+, A-, B+, etc.)   |
-| `screenshots/`          | Contains all screenshots used in the README                |
-| ├── `dataset_structure.png`     | Visual of dataset directory tree               |
-| ├── `preprocessing_output.png`  | Output after preprocessing sample image        |
-| ├── `model_summary.png`         | Summary of the CNN model architecture          |
-| ├── `training_accuracy.png`     | Accuracy/loss graph during training             |
-| └── `confusion_matrix.png`      | Confusion matrix after evaluation               |
-| `preprocess.py`         | Script to preprocess images and save them as `.npy`        |
-| `train_model.py`        | Script to build, train, and save the CNN model             |
-| `evaluate_model.py`     | Script to load the model and evaluate on validation data   |
-| `X_train.npy`           | Numpy array of preprocessed training images                |
-| `X_val.npy`             | Numpy array of validation images                           |
-| `y_train.npy`           | One-hot labels for training data                           |
-| `y_val.npy`             | One-hot labels for validation data                         |
-| `blood_group_cnn_model.h5` | Saved trained Keras model                         |
-| `README.md`             | This file – contains project overview and instructions      |
+Purpose:
+Ensures fingerprint images are standardized before feeding into the CNN model.
 
-📊 Results
-Trained with 10 epochs
+🔹 2. Model Architecture
 
-Achieved decent accuracy on validation set of upto 88%
+The CNN model consists of:
 
+Convolutional layers for feature extraction
+
+Max-pooling layers for dimensionality reduction
+
+Fully connected (Dense) layers for classification
+
+Softmax activation for 8-class output
+
+Loss Function: Categorical Cross-Entropy
+Optimizer: Adam
+
+🔹 3. Model Evaluation (evaluate.py)
+
+This script evaluates the trained model using:
+
+Classification Report (precision, recall, F1-score)
+
+Confusion Matrix visualization
+
+Class-wise performance analysis
+
+The results are saved in the /results directory for transparency and reproducibility.
+
+🔹 4. Web Application (app.py)
+
+A Flask-based web interface enables real-time prediction:
+
+User uploads a fingerprint image
+
+Image is preprocessed and passed to the trained CNN model
+
+Predicted blood group is displayed on the result page
+
+This demonstrates end-to-end deployment capability, not just model training.
+
+📊 Model Performance
+🔹 Overall Accuracy
+Accuracy: 45%
+
+🔹 Class-wise Observations
+
+Good performance for A+, A−, O+, O−
+
+Lower accuracy for AB+ and AB− classes
+
+📈 Results
+
+Confusion Matrix → /results/confusion_matrix.png
+
+Classification Report → /results/classification_report.txt
+
+▶️ How to Run the Project
+1️⃣ Install Dependencies
+pip install -r requirements.txt
+
+2️⃣ Run the Flask Application
+python app.py
+
+3️⃣ Open Browser
+http://127.0.0.1:5000/
+
+Upload a fingerprint image to get the predicted blood group.
+
+🔮Future Enhancements
+
+Increase dataset size and balance classes
+
+Apply Transfer Learning (ResNet, MobileNet, EfficientNet)
+
+Use class weighting or focal loss
+
+Extract fingerprint minutiae features
+
+Improve prediction accuracy for rare blood groups
