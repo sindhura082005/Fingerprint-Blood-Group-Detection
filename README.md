@@ -15,6 +15,8 @@ The project demonstrates an end-to-end machine learning pipeline including data 
 
  • Transparent evaluation using confusion matrix and classification report
 
+ • Focus on feasibility analysis and model behavior rather than inflated performance claims
+
 
 🧠 Tech Stack
 
@@ -35,31 +37,30 @@ The project demonstrates an end-to-end machine learning pipeline including data 
 
 Fingerprint-Blood-Group-Detection/
 
-├── dataset/
+├── dataset/                                       contains fingerprint images
 
 ├── results/
 
-│   ├── classification_report.txt
+│   ├── classification_report.txt                  #evaluation metrics
 
-│   └── confusion_matrix.png
+│   └── confusion_matrix.png                       #confusion matrix visualization
 
 ├── templates/
 
-│   ├── index.html
+│   ├── index.html                                 #image upload page
 
-│   └── result.html
+│   └── result.html                                #prediction result page
 
-├── app.py
+├── app.py                                         #Flask web application
 
-├── data_preprocessing.py
+├── data_preprocessing.py                          #image preprocessing pipeline
 
-├── evaluate.py
+├── evaluate.py                                    #model evaluation and metrics generation
 
-├── blood_group_cnn_model.h5
+├── blood_group_cnn_model.h5                       #trained CNN model
 
-├── requirements.txt
+├── requirements.txt                               #project dependencies
 
-└── README.md
 
 
 ⚙️ Detailed Implementation
