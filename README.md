@@ -31,14 +31,53 @@ The project demonstrates a **complete machine learning pipeline** including data
 ---
 
 ## 🏗 System Architecture
+---
 Fingerprint Image
+
 ↓
+
 Image Preprocessing
+
 ↓
+
 CNN Model (Feature Extraction + Classification)
+
 ↓
+
 Blood Group Prediction
+
 ↓
+
 Flask Web Application
+
+## 📂 Project Structure
+---
+Fingerprint-Blood-Group-Detection/
+│
+├── dataset/ # Fingerprint image dataset (8 classes)
+
+├── results/ # Evaluation outputs and plots
+
+├── templates/ # HTML templates for Flask app
+│
+├── app.py # Flask application
+
+├── train_model.py # CNN model training script
+
+├── data_preprocessing.py # Image preprocessing logic
+
+├── evaluate.py # Model evaluation and metrics
+
+├── blood_group_cnn_model.h5 # Trained CNN model
+│
+├── requirements.txt # Project dependencies
+
+├── .gitignore
+
+├── LICENSE
+
+└── README.md
+
+
 
 
