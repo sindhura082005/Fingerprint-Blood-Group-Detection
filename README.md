@@ -92,18 +92,22 @@ Fingerprint-Blood-Group-Detection/
 
 ### ▶️ How to Run the Project
 
- # Create virtual environment (Windows)
-python -m venv venv
-venv\Scripts\activate
+ Create virtual environment (Windows)
 
-# Install dependencies
-pip install -r requirements.txt
+    python -m venv venv
+    venv\Scripts\activate
 
-# Run the Flask application
-python app.py
+ Install dependencies
+    
+    pip install -r requirements.txt
 
-# Open in browser
-http://127.0.0.1:5000/
+ Run the Flask application
+
+    python app.py
+
+  Open in browser
+  
+    http://127.0.0.1:5000/
 
  ---   
 
