@@ -52,20 +52,28 @@ Flask Web Application
 
 ## 📂 Project Structure
 ---
-dataset/        - Fingerprint image dataset (8 blood group classes)
-results/        - Evaluation outputs and plots
-templates/      - HTML templates for Flask application
+Fingerprint-Blood-Group-Detection/
+├── dataset/
+│   └── fingerprint_images/        # Fingerprint image dataset (8 blood groups)
+│
+├── results/
+│   ├── confusion_matrix.png       # Model evaluation plot
+│   └── classification_report.txt # Evaluation metrics
+│
+├── templates/
+│   └── index.html                 # Flask UI template
+│
+├── app.py                         # Flask web application
+├── train_model.py                 # CNN model training script
+├── data_preprocessing.py          # Image preprocessing logic
+├── evaluate.py                    # Model evaluation script
+├── blood_group_cnn_model.h5       # Trained CNN model
+│
+├── requirements.txt               # Project dependencies
+├── .gitignore                     # Git ignored files
+├── README.md                      # Project documentation
+└── LICENSE                        # License file
 
-app.py          - Flask web application
-train_model.py  - CNN model training script
-data_preprocessing.py - Image preprocessing logic
-evaluate.py     - Model evaluation and metrics
-blood_group_cnn_model.h5 - Trained CNN model
-
-requirements.txt - Project dependencies
-.gitignore       - Git ignored files
-LICENSE          - MIT License
-README.md        - Project documentation
 
 
 ## ⚙️ Model Training
