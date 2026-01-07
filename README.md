@@ -12,7 +12,7 @@ The project demonstrates a **complete machine learning pipeline** including data
 ## 🚀 Key Features
 - CNN-based multi-class fingerprint image classification  
 - Supports **8 blood group classes**    
-- End-to-end ML pipeline: preprocessing → training → evaluation → inference  
+- End-to-end machine learning pipeline: preprocessing → training → evaluation → inference  
 - Flask-based web interface for real-time prediction  
 - Model performance evaluation using confusion matrix and classification report  
 
@@ -92,23 +92,18 @@ Fingerprint-Blood-Group-Detection/
 
 ### ▶️ How to Run the Project
 
- 1. Create virtual environment (Windows)
+ # Create virtual environment (Windows)
+python -m venv venv
+venv\Scripts\activate
 
-          python -m venv venv
+# Install dependencies
+pip install -r requirements.txt
 
-           venv\Scripts\activate
+# Run the Flask application
+python app.py
 
- 2. Install dependencies
-
-         pip install -r requirements.txt
-
- 3. Run the Flask application
-
-          python app.py
-
- 4. Open in browser
-    
-           http://127.0.0.1:5000/
+# Open in browser
+http://127.0.0.1:5000/
 
  ---   
 
