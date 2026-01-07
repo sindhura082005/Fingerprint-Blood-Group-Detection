@@ -81,15 +81,22 @@ Movie-Recommendation-System/
 
 ## ▶️ How to Run the Project
 
-1. Clone the repository
-2. Create and activate virtual environment
-   python -m venv venv
-   venv\Scripts\activate # Windows
-3. Install dependencies
-   pip install -r requirements.txt
-4.Run the Flask application
-   python app.py
-5.Open browser and visit:
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/Fingerprint-Blood-Group-Detection.git
+cd Fingerprint-Blood-Group-Detection
+
+# 2. Create and activate virtual environment (Windows)
+python -m venv venv
+venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the Flask application
+python app.py
+
+# 5. Open browser and visit
 http://127.0.0.1:5000/
 
 
