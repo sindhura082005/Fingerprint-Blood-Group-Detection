@@ -80,18 +80,18 @@ Movie-Recommendation-System/
 ```
 ### ▶️ How to Run the Project
 
-# 1. Create virtual environment (Windows)
+ 1. Create virtual environment (Windows)
 python -m venv venv
 
 venv\Scripts\activate
 
-# 2. Install dependencies
+ 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Run the Flask application
+ 3. Run the Flask application
 python app.py
 
-# 4. Open in browser
+ 4. Open in browser
 http://127.0.0.1:5000/
 
 
