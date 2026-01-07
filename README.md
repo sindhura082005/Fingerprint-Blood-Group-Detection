@@ -32,23 +32,31 @@ The project demonstrates a **complete machine learning pipeline** including data
 
 ## 🏗 System Architecture
 ---
-Fingerprint Image
+```text
+User
+ │
+ │  selects preferences / inputs movie
+ ▼
+Streamlit Web Interface
+ │
+ │  sends user input
+ ▼
+Recommendation Engine
+ │
+ │  loads trained similarity model
+ │  processes user preferences
+ ▼
+Movie Similarity Module
+ │
+ │  computes similarity scores
+ ▼
+Recommendation Results
+ │
+ │  fetches metadata
+ ▼
+Movie Dataset (movies.csv)
+```
 
-↓
-
-Image Preprocessing
-
-↓
-
-CNN Model (Feature Extraction + Classification)
-
-↓
-
-Blood Group Prediction
-
-↓
-
-Flask Web Application
 
 ## 📂 Project Structure
 ---
