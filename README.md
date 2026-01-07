@@ -81,7 +81,7 @@ Fingerprint-Blood-Group-Detection/
 
 ## 📸Sample Dataset Screenshot
 
-Screenshots of sample fingerprint images used for training and evaluation are available in the `docs/` folder.
+Screenshots of sample fingerprint images used for training and evaluation are available in the `results/` folder.
 
 
 ### ▶️ How to Run the Project
