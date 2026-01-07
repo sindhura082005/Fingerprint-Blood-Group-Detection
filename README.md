@@ -61,26 +61,29 @@ Result Display (Web Interface)
 ## 📂 Project Structure
 ---
 ```text
-Movie-Recommendation-System/
-├── app/
-│   ├── app.py                  # Streamlit application logic
-│   └── assets/                 # App screenshots & static assets
-│       ├── app-screenshot-1.png
-│       ├── app-screenshot-2.png
-│       └── app-screenshot-3.png
+Fingerprint-Blood-Group-Detection/
+├── dataset/                    # Fingerprint image dataset (8 classes)
+├── results/                    # Evaluation outputs and plots
+├── templates/                  # HTML templates for Flask app
+│   └── index.html              # Main UI template (if applicable)
 │
-├── data/
-│   └── movies.csv              # Movie metadata dataset
+├── app.py                      # Flask application logic
+├── train_model.py              # CNN model training script
+├── data_preprocessing.py       # Image preprocessing logic
+├── evaluate.py                 # Model evaluation and metrics
+├── blood_group_cnn_model.h5    # Trained CNN model
 │
-├── .env                        # Environment variables (API keys)
 ├── .gitignore                  # Git ignored files
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # Project documentation
 └── LICENSE                     # MIT License
+
 ```
+
 ### ▶️ How to Run the Project
 
  1. Create virtual environment (Windows)
+
 python -m venv venv
 
 venv\Scripts\activate
