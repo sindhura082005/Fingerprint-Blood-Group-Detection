@@ -79,6 +79,10 @@ Movie-Recommendation-System/
 └── LICENSE                     # MIT License
 ```
 
+## ▶️ How to Run the Project
+
+1. Clone the repository
+
 
 
 ## ⚙️ Model Training
@@ -92,6 +96,16 @@ Movie-Recommendation-System/
 - Loss function: Categorical Crossentropy  
 
 ---
+
+## 📁 Dataset Details
+
+- Dataset was **manually collected** and curated
+- Contains fingerprint images across **8 blood group classes**
+- Dataset size is limited and used for **academic and experimental purposes**
+- Images are preprocessed using grayscale conversion, resizing, and normalization
+
+> ⚠️ Note: This system is intended for **research and learning purposes only** and should not be used for medical diagnosis.
+
 
 ## 📊 Model Evaluation
 The model is evaluated using:
