@@ -80,14 +80,8 @@ Fingerprint-Blood-Group-Detection/
 ```
 
 ## 📸Sample Dataset Screenshot
-<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/b7795bc8-abf7-4ca9-95f9-cdfb0adc4e42" />
 
-<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/7444ce16-907f-4691-aa9c-0172a6e19b58" />
-
-<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/976d4301-32a9-4ce7-92a5-ea336c14f89c" />
-
-<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/b2613a3a-6f64-4c68-8faf-f7539d780bdf" />
-
+Screenshots of sample fingerprint images used for training and evaluation are available in the `docs/` folder.
 
 
 ### ▶️ How to Run the Project
