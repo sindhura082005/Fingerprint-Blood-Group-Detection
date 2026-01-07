@@ -33,7 +33,6 @@ The project demonstrates a **complete machine learning pipeline** including data
 ## 🏗 System Architecture
 ---
 ```text
-```text
 User
  │
  │ uploads fingerprint image
