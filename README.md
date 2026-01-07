@@ -94,19 +94,23 @@ Fingerprint-Blood-Group-Detection/
 
  1. Create virtual environment (Windows)
 
-python -m venv venv
+          python -m venv venv
 
-venv\Scripts\activate
+           venv\Scripts\activate
 
  2. Install dependencies
-pip install -r requirements.txt
+
+         pip install -r requirements.txt
 
  3. Run the Flask application
-python app.py
+
+          python app.py
 
  4. Open in browser
-http://127.0.0.1:5000/
+    
+           http://127.0.0.1:5000/
 
+ ---   
 
 ## ⚙️ Model Training
 - Input images resized to a fixed shape
