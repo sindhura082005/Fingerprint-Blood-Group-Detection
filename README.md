@@ -78,6 +78,36 @@ Fingerprint-Blood-Group-Detection/
 
 └── README.md
 
+## ⚙️ Model Training
+- Input images resized to a fixed shape
+- CNN architecture includes:
+  - Convolution layers
+  - Max pooling layers
+  - Fully connected dense layers
+  - Softmax output layer for multi-class classification
+- Optimizer: Adam  
+- Loss function: Categorical Crossentropy  
+
+---
+
+## 📊 Model Evaluation
+The model is evaluated using:
+- Confusion Matrix
+- Precision, Recall, F1-score
+- Classification Report
+
+Evaluation results are saved in the `results/` directory.
+
+---
+
+## 🌐 Web Application
+- Built using **Flask**
+- Allows users to upload a fingerprint image
+- Displays predicted blood group in real time
+- Uses the trained CNN model (`.h5`) for inference
+
+---
+
 
 
 
