@@ -82,6 +82,7 @@ Movie-Recommendation-System/
 
 # 1. Create virtual environment (Windows)
 python -m venv venv
+
 venv\Scripts\activate
 
 # 2. Install dependencies
@@ -133,6 +134,17 @@ Evaluation results are saved in the `results/` directory.
 - Uses the trained CNN model (`.h5`) for inference
 
 ---
+
+## 🚧 Limitations & Future Improvements
+
+- Dataset size is limited; performance may improve with more diverse data
+- Fingerprint quality significantly affects prediction accuracy
+- Future enhancements:
+  - Larger and more diverse dataset
+  - Advanced CNN architectures (ResNet, EfficientNet)
+  - Deployment using Docker or cloud platforms
+  - Improved UI with user authentication
+
 
 
 
