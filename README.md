@@ -11,8 +11,7 @@ The project demonstrates a **complete machine learning pipeline** including data
 
 ## 🚀 Key Features
 - CNN-based multi-class fingerprint image classification  
-- Supports **8 blood group classes**  
-- Custom dataset collected manually (not from Kaggle)  
+- Supports **8 blood group classes**    
 - End-to-end ML pipeline: preprocessing → training → evaluation → inference  
 - Flask-based web interface for real-time prediction  
 - Model performance evaluation using confusion matrix and classification report  
@@ -123,7 +122,6 @@ http://127.0.0.1:5000/
 
 ## 📁 Dataset Details
 
-- Dataset was **manually collected** and curated
 - Contains fingerprint images across **8 blood group classes**
 - Dataset size is limited and used for **academic and experimental purposes**
 - Images are preprocessed using grayscale conversion, resizing, and normalization
@@ -149,16 +147,18 @@ Evaluation results are saved in the `results/` directory.
 
 ---
 
-## 🚧 Limitations & Future Improvements
+🚧 Limitations & Accuracy Improvement Strategies
 
-- Dataset size is limited; performance may improve with more diverse data
-- Fingerprint quality significantly affects prediction accuracy
-- Future enhancements:
-  - Larger and more diverse dataset
-  - Advanced CNN architectures (ResNet, EfficientNet)
-  - Deployment using Docker or cloud platforms
-  - Improved UI with user authentication
+The current model achieves approximately 45% accuracy due to the following factors:
+- Limited dataset size across 8 classes
+- Variability in fingerprint image quality
+- Use of a basic CNN architecture
 
+Planned improvements include:
+- Data augmentation to increase dataset diversity
+- Dataset balancing across blood group classes
+- Adoption of transfer learning models (ResNet, EfficientNet)
+- Hyperparameter tuning and regularization techniques
 
 
 
